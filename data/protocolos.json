@@ -1,0 +1,17 @@
+[
+ {
+  "id": "IAM_CS",
+  "titulo": "Infarto com Supra de ST",
+  "texto": "Dor torácica típica >20min + supra de ST. Administrar AAS..."
+ },
+ {
+  "id": "AVC_ISQ",
+  "titulo": "AVC Isquêmico",
+  "texto": "Déficit neurológico súbito. Avaliar trombólise..."
+ },
+ {
+  "id": "DENGUE_GRAVE",
+  "titulo": "Dengue com sinais de alarme",
+  "texto": "Dor abdominal intensa, vômitos persistentes..."
+ }
+]

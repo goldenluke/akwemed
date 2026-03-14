@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# virtualenv
+venv/
+.env
+
+# node
+node_modules/
+dist/
+
+# logs
+*.log
+
+# models
+models/*.bin
+models/*.pt
+models/*.safetensors
+
+# OS
+.DS_Store
