@@ -16,6 +16,8 @@ An experimental **clinical AI system** designed to support healthcare profession
 
 ---
 
+<img src="https://github.com/goldenluke/akwemed/blob/main/80b238c0-1afc-43b9-bfdd-cf157df2e674.jpeg?raw=true" width="800"/>
+
 # 🌎 Overview
 
 **AKWEMED** is a prototype **clinical artificial intelligence assistant** designed to support medical decision-making in **intercultural healthcare contexts**, particularly within **Indigenous communities in Brazil**.
