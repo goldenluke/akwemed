@@ -1,13 +1,15 @@
 <div align="center">
 
-# 🧠 AKWEMED  
-### Indigenous Clinical AI Assistant for Intercultural Healthcare
+# AKWEMED
+### AI for Intercultural Healthcare and Complex Systems Monitoring
 
-An experimental **clinical AI system** designed to support healthcare professionals working in **Indigenous territories**, integrating **natural language processing, retrieval-augmented reasoning, and Indigenous language interpretation**.
+An experimental clinical artificial intelligence system designed to support healthcare professionals working in Indigenous territories.
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
-![Django](https://img.shields.io/badge/Django-API-green)
-![FastAPI](https://img.shields.io/badge/FastAPI-AI%20Service-009688)
+AKWEMED integrates **natural language processing**, **retrieval-augmented clinical reasoning**, and **complex systems analysis** to assist communication and clinical decision support in intercultural healthcare environments.
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue)
+![Django](https://img.shields.io/badge/Django-REST-green)
+![FastAPI](https://img.shields.io/badge/FastAPI-AI%20Engine-009688)
 ![React](https://img.shields.io/badge/React-Frontend-61DAFB)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-UI-38BDF8)
 ![License](https://img.shields.io/badge/license-MIT-black)
@@ -16,149 +18,132 @@ An experimental **clinical AI system** designed to support healthcare profession
 
 ---
 
+# Overview
 
-# 🌎 Overview
+**AKWEMED** is an experimental research project exploring how artificial intelligence can support **clinical communication and decision support in Indigenous healthcare contexts**.
 
-**AKWEMED** is a prototype **clinical artificial intelligence assistant** designed to support medical decision-making in **intercultural healthcare contexts**, particularly within **Indigenous communities in Brazil**.
-
-The system combines:
-
-- Indigenous language interpretation
-- Retrieval-Augmented Clinical Reasoning (RAG)
-- Local AI inference
-- Mobile-first deployment
-- Offline operation capability
-
-The goal is to reduce **communication barriers between healthcare professionals and Indigenous patients**.
-
----
-
-# 🧭 Motivation
-
-In many Indigenous territories, healthcare professionals face challenges such as:
+Healthcare professionals working in Indigenous territories often encounter:
 
 - linguistic barriers  
 - culturally specific symptom descriptions  
-- lack of clinical decision support tools adapted to local contexts  
-- limited internet connectivity  
+- limited digital infrastructure  
+- lack of clinical decision-support systems adapted to local realities  
 
-AKWEMED explores how **AI systems can assist intercultural clinical communication**.
+AKWEMED investigates how modern AI techniques can help address these challenges.
 
-The system integrates linguistic interpretation of **Xerente (Akwẽ)** expressions with clinical protocol retrieval.
+The system combines:
 
-Example input:
+- Indigenous language interpretation  
+- retrieval-augmented clinical reasoning (RAG)  
+- semantic embeddings  
+- local AI inference  
+- complex systems monitoring  
+
+The project is currently focused on the **Xerente (Akwẽ) language**.
+
+---
+
+# Example Interaction
+
+Patient input (Xerente language)
 
 ```
 ĩsĩ kâ peito
 ```
 
-System interpretation:
+System interpretation
 
 ```
 dor no peito
 ```
 
-Clinical output:
+Possible clinical reasoning
 
 ```
-Possible protocol: Acute Coronary Syndrome
+Possible protocol → Acute Coronary Syndrome
 ```
+
+The system interprets linguistic expressions and connects them to clinical knowledge bases.
 
 ---
 
-# 🧠 System Architecture
+# System Architecture
 
-AKWEMED follows a **multi-layer architecture** separating the clinical interface from the AI reasoning engine.
+AKWEMED follows a modular architecture separating the interface, clinical reasoning engine and structural monitoring system.
 
 ```
-React Frontend (Chat Interface)
+React Frontend (Clinical Chat Interface)
         ↓
 Django REST API
         ↓
-FastAPI AI Service
+FastAPI AI Inference Engine
         ↓
 Xerente Language Interpreter
         ↓
-Clinical RAG Engine
+Clinical RAG Engine (semantic embeddings)
         ↓
-Protocol Knowledge Base
+MetastableX Structural Analysis Engine
+        ↓
+Clinical Protocol Knowledge Base
 ```
+
+This architecture allows the system to evolve as a **research platform for clinical AI and complex systems monitoring**.
 
 ---
 
-# ⚙️ Core Components
+# MetastableX – Complex Systems Engine
 
-## Frontend
+One of the experimental components integrated into AKWEMED is **MetastableX**, a framework inspired by **statistical physics and complex systems theory**.
 
-**React + TailwindCSS**
+Many biological, physiological and epidemiological systems operate in **meta-stable regimes**, where apparent stability can abruptly shift into instability.
 
-Provides a conversational clinical interface:
+MetastableX investigates these dynamics using structural indicators derived from nonlinear time-series analysis.
 
-- chatbot-style UI  
-- clinical response cards  
-- mobile-friendly layout  
-- real-time API interaction  
+Key indicators include:
 
----
+- autocorrelation (AC1)  
+- volatility  
+- Fisher information  
+- Lempel–Ziv complexity  
+- fractal memory (DFA)  
+- multiscale entropy  
 
-## Backend API
+These indicators allow the system to detect signals associated with:
 
-**Django REST Framework**
+- loss of system resilience  
+- metastable states  
+- critical transitions  
+- structural instability  
 
-Responsible for:
-
-- request validation  
-- API routing  
-- integration with AI service  
-- authentication layer (future)  
-
----
-
-## AI Service
-
-**FastAPI**
-
-Handles:
-
-- natural language interpretation  
-- clinical retrieval  
-- inference logic  
-- semantic similarity search  
+In the context of AKWEMED, this engine explores how **complex systems analysis can complement clinical reasoning**, potentially enabling new approaches to monitoring health dynamics and epidemiological signals.
 
 ---
 
-## Linguistic Layer
+# Technology Stack
 
-The **Xerente interpreter** normalizes indigenous expressions into medical concepts.
+AKWEMED combines modern web technologies and machine learning tools.
 
-Example:
+Core technologies:
 
-```
-ĩsĩ → dor
-kâ → em / no
-```
+- Python  
+- Django REST Framework  
+- FastAPI  
+- Sentence Transformers  
+- MiniLM (local embedding model)  
 
-Normalized query:
+Frontend:
 
-```
-dor no peito
-```
+- React  
+- TailwindCSS  
 
----
+Scientific components:
 
-## Clinical Knowledge Retrieval
-
-The system uses **sentence-transformer embeddings** to perform semantic search over clinical protocols.
-
-Pipeline:
-
-```
-query → embedding → similarity search → protocol match
-```
+- MetastableX (complex systems analysis)
+- QWAN experimental structural monitoring modules
 
 ---
 
-# 🧩 Repository Structure
+# Repository Structure
 
 ```
 akwemed
@@ -174,8 +159,13 @@ akwemed
 │   ├── linguistics
 │   │   └── xerente.py
 │   │
-│   └── rag
-│       └── search.py
+│   ├── rag
+│   │   └── search.py
+│   │
+│   └── metastable
+│       └── engine.py
+│
+├── metastablex
 │
 ├── data
 │   ├── protocolos.json
@@ -186,41 +176,36 @@ akwemed
 │   │   ├── components
 │   │   ├── pages
 │   │   └── services
-│   │
-│   └── index.html
-│
-├── models
 │
 ├── run_all.py
-│
 └── README.md
 ```
 
 ---
 
-# 🚀 Installation
+# Installation
 
-Clone the repository:
+Clone the repository
 
 ```
 git clone https://github.com/goldenluke/akwemed.git
 cd akwemed
 ```
 
-Create virtual environment:
+Create a virtual environment
 
 ```
 python -m venv venv
 source venv/bin/activate
 ```
 
-Install backend dependencies:
+Install backend dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-Install frontend dependencies:
+Install frontend dependencies
 
 ```
 cd frontend
@@ -229,28 +214,28 @@ npm install
 
 ---
 
-# 🧪 Running the System
+# Running the System
 
-Start the AI service:
+Start the AI service
 
 ```
 uvicorn backend.fastapi_ai.main:app --reload --port 9000
 ```
 
-Start Django API:
+Start the Django API
 
 ```
 python manage.py runserver
 ```
 
-Start frontend:
+Start the frontend
 
 ```
 cd frontend
 npm run dev
 ```
 
-Access interface:
+Open the interface
 
 ```
 http://localhost:5173
@@ -258,113 +243,52 @@ http://localhost:5173
 
 ---
 
-# 💬 Example Interaction
+# Research Context
 
-User input:
+AKWEMED is an experimental research platform exploring intersections between:
 
-```
-ĩsĩ kâ peito
-```
-
-System output:
-
-```
-Interpretation
-dor no peito
-
-Clinical Protocol
-Infarto com Supra de ST
-
-Recommendation
-Avaliar síndrome coronariana aguda
-```
-
----
-
-# 📱 Offline Mode (Planned)
-
-AKWEMED is designed to support **offline deployment in remote territories**.
-
-Future goals include:
-
-- lightweight local AI models  
-- Android deployment  
-- edge inference  
-- offline protocol database  
-
----
-
-# 🔬 Research Context
-
-AKWEMED is a **research prototype** exploring:
-
-- intercultural clinical communication  
-- indigenous language processing  
-- AI-assisted healthcare in remote environments  
-- clinical decision support systems  
-
-The project contributes to discussions in:
-
-- **medical informatics**  
-- **digital health**  
-- **indigenous health policy**  
-- **AI for social impact**
-
----
-
-# 🛣️ Roadmap
-
-Future development directions:
-
-- multi-turn clinical conversations  
-- expanded indigenous language coverage  
-- clinical reasoning modules  
-- voice interface  
-- offline mobile deployment  
-- epidemiological integration  
-
----
-<div align="center">
-<img src="https://github.com/goldenluke/akwemed/blob/main/80b238c0-1afc-43b9-bfdd-cf157df2e674.jpeg?raw=true" width="800"/>
-</div>
----
-
-# 🤝 Contributing
-
-Contributions are welcome.
-
-Possible areas:
-
-- indigenous linguistics  
+- AI for healthcare  
+- Indigenous language processing  
 - medical informatics  
-- AI systems engineering  
-- health data science  
+- complex systems science  
+- digital epidemiology  
 
-Pull requests and issue reports are encouraged.
+The integration of linguistic interpretation and structural analysis creates a novel environment for investigating **AI-assisted clinical communication in intercultural settings**.
 
 ---
 
-# 📜 License
+# Future Directions
 
-MIT License
+Planned research directions include:
 
-```
+- offline operation in remote villages  
+- Android deployment  
+- expansion to additional Indigenous languages  
+- integration with official clinical protocols  
+- structural monitoring of epidemiological systems  
+- extended complex systems modeling using MetastableX  
+
+---
+
+# Acknowledgments
+
+This project was inspired by my mother, who worked for nearly a decade in Indigenous healthcare and speaks the Xerente language.
+
+Her experience and dedication to Indigenous communities were fundamental motivations for this research.
+
+---
+
+# License
+
 MIT License
 
 Copyright (c) 2026 Lucas Amaral Dourado
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software.
-```
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software.
 
 ---
 
-# 👤 Author
+# Author
 
-Lucas Amaral Dourado
-Medical student and researcher in **AI, complex systems and digital health**.
-
----
+Lucas Amaral Dourado  
+Researcher in AI, complex systems and digital health.
