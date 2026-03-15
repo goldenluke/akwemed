@@ -16,7 +16,6 @@ An experimental **clinical AI system** designed to support healthcare profession
 
 ---
 
-<img src="https://github.com/goldenluke/akwemed/blob/main/80b238c0-1afc-43b9-bfdd-cf157df2e674.jpeg?raw=true" width="800"/>
 
 # 🌎 Overview
 
@@ -324,6 +323,10 @@ Future development directions:
 - offline mobile deployment  
 - epidemiological integration  
 
+---
+<div align="center">
+<img src="https://github.com/goldenluke/akwemed/blob/main/80b238c0-1afc-43b9-bfdd-cf157df2e674.jpeg?raw=true" width="800"/>
+</div>
 ---
 
 # 🤝 Contributing
