@@ -1,16 +1,26 @@
-export default function ProtocolCard({data}){
+export default function ProtocolCard({ data }) {
 
-    return(
+    return (
 
-        <div className="bg-slate-800 p-6 rounded-xl">
+        <div className="bg-gray-900 p-3 rounded-lg">
 
-        <h2 className="text-xl mb-4">
+        <h3 className="text-green-400 text-sm font-bold mb-1">
 
         Protocolo Clínico
 
-        </h2>
+        </h3>
 
-        <p>{data.protocol}</p>
+        <p className="font-semibold">
+
+        {data.protocol}
+
+        </p>
+
+        <p className="text-gray-300 text-sm">
+
+        {data.recommendation}
+
+        </p>
 
         </div>
 

@@ -1,13 +1,19 @@
-from core.rag.search import ClinicalRAG
+import numpy as np
+
 from core.linguistics.xerente import XerenteInterpreter
+from core.rag.search import ClinicalRAG
+
+from core.metastable.engine import MetastableAnalyzer
+from core.metastable.complexity import lempel_ziv
 
 
 class ClinicalAssistant:
 
     def __init__(self):
 
-        self.rag = ClinicalRAG("data/protocolos.json")
         self.lang = XerenteInterpreter("data/xerente_glossary.json")
+
+        self.rag = ClinicalRAG("data/protocolos.json")
 
     def consult(self, text):
 
@@ -15,12 +21,28 @@ class ClinicalAssistant:
 
         protocol = self.rag.query(normalized)
 
-        title = protocol.get("titulo") or protocol.get("id") or "Protocolo clínico"
-        body = protocol.get("texto") or protocol.get("descricao") or str(protocol)
+        synthetic_signal = np.random.normal(0,1,200)
+
+        analyzer = MetastableAnalyzer(synthetic_signal)
+
+        metastable = analyzer.compute()
+
+        complexity = lempel_ziv(synthetic_signal)
 
         return {
+
             "input": text,
-            "interpreted": normalized,
-            "protocol": title,
-            "recommendation": body
+
+            "interpretation": normalized,
+
+            "protocol": protocol.get("titulo","unknown"),
+
+            "recommendation": protocol.get("conduta","avaliar clinicamente"),
+
+            "metastable_state": metastable["state"],
+
+            "volatility": metastable["volatility"],
+
+            "complexity": complexity
+
         }

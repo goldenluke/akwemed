@@ -1,30 +1,20 @@
-export default function AiMessage({data}){
+import InterpretationCard from "./InterpretationCard"
+import ProtocolCard from "./ProtocolCard"
+import DynamicsCard from "./DynamicsCard"
 
-    return(
+export default function AiMessage({ data }) {
+
+    return (
 
         <div className="flex justify-start">
 
-        <div className="bg-white shadow p-4 rounded-xl max-w-lg space-y-2">
+        <div className="bg-gray-800 p-4 rounded-xl max-w-xl space-y-3">
 
-        <div className="text-blue-600 font-semibold">
-        Interpretação
-        </div>
+        <InterpretationCard data={data}/>
 
-        <div>
-        {data.interpreted}
-        </div>
+        <ProtocolCard data={data}/>
 
-        <div className="text-red-600 font-semibold">
-        Protocolo Clínico
-        </div>
-
-        <div>
-        {data.protocol}
-        </div>
-
-        <div className="text-gray-600">
-        {data.recommendation}
-        </div>
+        <DynamicsCard data={data}/>
 
         </div>
 

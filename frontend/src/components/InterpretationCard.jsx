@@ -1,29 +1,16 @@
-import InterpretationCard from "./InterpretationCard"
-import ProtocolCard from "./ProtocolCard"
+export default function InterpretationCard({ data }) {
 
-export default function ClinicalPanel({analysis}){
+    return (
 
-    if(!analysis){
+        <div className="bg-gray-900 p-3 rounded-lg">
 
-        return(
+        <h3 className="text-blue-400 text-sm font-bold mb-1">
 
-            <div className="p-10 text-slate-400">
+        Interpretação
 
-            Aguardando consulta clínica...
+        </h3>
 
-            </div>
-
-        )
-
-    }
-
-    return(
-
-        <div className="p-8 space-y-6">
-
-        <InterpretationCard data={analysis}/>
-
-        <ProtocolCard data={analysis}/>
+        <p>{data.interpretation}</p>
 
         </div>
 

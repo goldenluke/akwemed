@@ -1,11 +1,13 @@
-export default function UserMessage({text}){
+export default function UserMessage({ text }) {
 
-    return(
+    return (
 
         <div className="flex justify-end">
 
-        <div className="bg-medical text-white p-3 rounded-xl max-w-md">
+        <div className="bg-blue-600 px-4 py-2 rounded-xl max-w-md">
+
         {text}
+
         </div>
 
         </div>
